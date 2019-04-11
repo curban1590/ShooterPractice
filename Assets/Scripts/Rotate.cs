@@ -6,9 +6,9 @@ public class Rotate : MonoBehaviour
 {
     public float spd = 1.0f;
     public float moveSpd = 0.1f;
-    public Camera cam1;
-    public Camera cam2;
-    private bool flge;
+    //public Camera cam1;
+    //public Camera cam2;
+    //private bool flge;
 
     // Start is called before the first frame update
     void Start()
@@ -21,12 +21,11 @@ public class Rotate : MonoBehaviour
     {
         transform.Translate(new Vector3(0,0 ,Input.GetAxisRaw("tg")) * moveSpd);
 
-        transform.Rotate(new Vector3(0, Input.GetAxisRaw("vc"),0)*spd);
+        transform.Rotate(new Vector3(0, Input.GetAxisRaw("fh"),0)*spd);
 
-        if (Input.GetKeyDown("1")){ flge = !flge; }
-                     
-        cam2.enabled = !flge;
-        cam1.enabled = flge;
+        //if (Input.GetKeyDown("1")){ flge = !flge; }                     
+        //cam2.enabled = !flge;
+        //cam1.enabled = flge;
 
 
     }

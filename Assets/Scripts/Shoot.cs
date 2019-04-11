@@ -38,7 +38,7 @@ public class Shoot : MonoBehaviour {
 
         GetComponent<Rigidbody>().AddForce( v*20);
 
-        transform.Rotate ( new Vector3(0,Input.GetAxisRaw("vc") * 10, 0));
+        //transform.Rotate ( new Vector3(0,Input.GetAxisRaw("vc") * 10, 0));
 
 
         if (Input.GetButtonDown("Fire1"))
